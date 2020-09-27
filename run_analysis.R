@@ -2,18 +2,18 @@
 library(dplyr)
 
 #Read the training data
-x_train <- read.table('../UCI HAR Dataset/train/X_train.txt')
-y_train <- read.table('../UCI HAR Dataset/train/Y_train.txt')
-subject_train <- read.table('../UCI HAR Dataset/train/subject_train.txt')
+x_train <- read.table('./UCI HAR Dataset/train/X_train.txt')
+y_train <- read.table('./UCI HAR Dataset/train/Y_train.txt')
+subject_train <- read.table('./UCI HAR Dataset/train/subject_train.txt')
 
 #Read the test data
-x_test <- read.table('../UCI HAR Dataset/test/X_test.txt')
-y_test <- read.table('../UCI HAR Dataset/test/Y_test.txt')
-subject_test <- read.table('../UCI HAR Dataset/test/subject_test.txt')
+x_test <- read.table('./UCI HAR Dataset/test/X_test.txt')
+y_test <- read.table('./UCI HAR Dataset/test/Y_test.txt')
+subject_test <- read.table('./UCI HAR Dataset/test/subject_test.txt')
 
 #Read Feature names and activity labels
-features <- read.table('../UCI HAR Dataset/features.txt')
-activity_labels <- read.table('../UCI HAR Dataset/activity_labels.txt')
+features <- read.table('./UCI HAR Dataset/features.txt')
+activity_labels <- read.table('./UCI HAR Dataset/activity_labels.txt')
 
 #Combine training and testing data
 x_total <- rbind(x_train, x_test)
